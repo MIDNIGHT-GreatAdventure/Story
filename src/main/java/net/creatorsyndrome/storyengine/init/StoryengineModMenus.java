@@ -7,7 +7,6 @@ package net.creatorsyndrome.storyengine.init;
 import net.minecraftforge.network.IContainerFactory;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.RegistryEvent;
 
 import net.minecraft.world.inventory.MenuType;
 import net.minecraft.world.inventory.AbstractContainerMenu;
