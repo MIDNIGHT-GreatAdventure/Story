@@ -7,7 +7,6 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.InventoryScreen;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
@@ -91,12 +90,12 @@ public class DialogWindowScreen extends AbstractContainerScreen<DialogWindowMenu
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
 		if (IfDialog1Procedure.execute(world))
-			this.font.draw(poseStack, new TranslatableComponent(StoryengineModVariables.MapVariables.get(world).variant_1), 63, 30, -1);
+			this.font.draw(poseStack, Component.translatable(StoryengineModVariables.MapVariables.get(world).variant_1), 63, 30, -1);
 		if (IfDialog2Procedure.execute(world))
-			this.font.draw(poseStack, new TranslatableComponent(StoryengineModVariables.MapVariables.get(world).variant_2), 63, 66, -1);
+			this.font.draw(poseStack, Component.translatable(StoryengineModVariables.MapVariables.get(world).variant_2), 63, 66, -1);
 		if (IfDialog3Procedure.execute(world))
-			this.font.draw(poseStack, new TranslatableComponent(StoryengineModVariables.MapVariables.get(world).variant_3), 63, 101, -1);
-		this.font.draw(poseStack, new TranslatableComponent(StoryengineModVariables.MapVariables.get(world).phrase), -6, 160, -12829636);
+			this.font.draw(poseStack, Component.translatable(StoryengineModVariables.MapVariables.get(world).variant_3), 63, 101, -1);
+		this.font.draw(poseStack, Component.translatable(StoryengineModVariables.MapVariables.get(world).phrase), -6, 160, -12829636);
 	}
 
 	@Override

@@ -25,7 +25,7 @@ public class OpenDialogWindowProcedure {
 		{
 			if (sourceentity instanceof ServerPlayer _ent) {
 				BlockPos _bpos = new BlockPos(x, y, z);
-				NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
+				NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
 					@Override
 					public Component getDisplayName() {
 						return new TextComponent("DialogWindow");

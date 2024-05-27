@@ -23,7 +23,7 @@ import net.creatorsyndrome.storyengine.StoryengineMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class StoryengineModEntities {
-	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITIES, StoryengineMod.MODID);
+	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, StoryengineMod.MODID);
 	public static final RegistryObject<EntityType<NPCEntity>> NPC = register("npc",
 			EntityType.Builder.<NPCEntity>of(NPCEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(NPCEntity::new)
 

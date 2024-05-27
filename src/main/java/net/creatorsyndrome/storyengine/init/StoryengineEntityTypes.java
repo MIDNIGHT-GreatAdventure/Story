@@ -12,7 +12,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class StoryengineEntityTypes {
     public static final DeferredRegister<EntityType<?>> ENTITY_TYPES =
-            DeferredRegister.create(ForgeRegistries.ENTITIES, StoryengineMod.MODID);
+            DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, StoryengineMod.MODID);
 
     public static final RegistryObject<EntityType<ModernNPCEntity>> MODERNNPC =
             ENTITY_TYPES.register("modernnpc",
