@@ -65,10 +65,6 @@ import java.util.List;
 
 @Mod.EventBusSubscriber
 public class NPCEntity extends TamableAnimal {
-	@SubscribeEvent
-	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(StoryengineModEntities.NPC.get(), 20, 4, 4));
-	}
 
 	public NPCEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(StoryengineModEntities.NPC.get(), world);

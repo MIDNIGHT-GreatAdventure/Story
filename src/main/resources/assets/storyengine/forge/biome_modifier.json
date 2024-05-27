@@ -1,0 +1,4 @@
+{
+	"type": "Story:add_features",
+	"biomes": "#minecraft:is_overworld"
+}
